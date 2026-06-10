@@ -194,7 +194,7 @@ Created by **$creaming Eagle**
 
 ---
 
-BOYKISSER SCREAMER
+BOYKISSER JUMPSCARE
 
 ```
 
