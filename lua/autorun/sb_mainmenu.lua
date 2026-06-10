@@ -161,21 +161,4 @@ if CLIENT then
             tree:AddNode("No nextbots registered", "icon16/cross.png")
         end
     end)
-
-    -- =========================================================================
-    -- 6. Remove "Delete" from right-click menu on our spawn icons
-    -- =========================================================================
-    hook.Add("SpawnmenuIconMenuOpen", "ScreamingBase_RemoveDelete", function(menu, icon)
-        local spawnname = icon:GetSpawnName()
-        if not spawnname then return end
-        local pool = list.Get("ScreamingBasePool") or {}
-        if not pool[spawnname] then return end
-
-        for i = #menu.Items, 1, -1 do
-            local item = menu.Items[i]
-            if item and item:GetText() == language.GetPhrase("Spawnmenu.Delete") then
-                menu:RemoveItem(item)
-            end
-        end
-    end)
 end
