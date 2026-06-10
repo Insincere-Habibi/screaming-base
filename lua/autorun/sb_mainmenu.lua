@@ -170,17 +170,11 @@ if CLIENT then
         if not spawnname then return end
         local pool = list.Get("ScreamingBasePool") or {}
         if not pool[spawnname] then return end
-        if not IsValid(menu) or not menu.GetCanvas then return end
 
-        local items = menu:GetCanvas():GetChildren()
-        local deletePhrase = language.GetPhrase("spawnmenu.menu.delete")
-
-        for _, item in pairs(items) do
-            if IsValid(item) and item.GetText then
-                local text = item:GetText()
-                if text == deletePhrase or text == "#spawnmenu.menu.delete" then
-                    item:Remove()
-                end
+        for i = #menu.Items, 1, -1 do
+            local item = menu.Items[i]
+            if item and item:GetText() == language.GetPhrase("Spawnmenu.Delete") then
+                menu:RemoveItem(item)
             end
         end
     end)
