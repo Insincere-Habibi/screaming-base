@@ -28,7 +28,7 @@ Subscribe on Steam Workshop or copy `$creaming_base` into `garrysmod/addons/`
 ### 2. Create your NextBot
 Create folder `lua/entities/npc_mybot/` with `shared.lua`:
 
-``lua
+```lua
 ENT.Base = "base_screaming"
 ENT.Type = "nextbot"
 ENT.PrintName = "My Bot"
@@ -41,7 +41,7 @@ ENT.SpriteMaterial = "mybot/sprite"
 ENT.SpriteSize = 90
 
 ScreamingBase.RegisterNextbot(ENT)
-``
+```
 
 ### 3. Add a sprite
 Put your `.vtf` file in `materials/mybot/sprite.vtf`
