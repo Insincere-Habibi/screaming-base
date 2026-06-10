@@ -55,7 +55,7 @@ Your NextBot is ready. Spawn it from `Q-menu → $creaming Base → My Addon`
 
 Create `settings/npc_mybot.json`:
 
-``json
+```json
 {
     "LockSettings": false,
     "base_speed": 320,
@@ -73,7 +73,7 @@ Create `settings/npc_mybot.json`:
         "height": 72
     }
 }
-``
+```
 
 ### Hitbox Shapes
 
