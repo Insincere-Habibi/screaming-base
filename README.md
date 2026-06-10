@@ -7,6 +7,8 @@ No complex setup, no spaghetti code.
 Originally built for personal use.  
 Now released for everyone.
 
+[![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue?style=for-the-badge&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=3742089194)
+
 ## What's Inside
 
 - **Base entity** (`base_screaming`) — AI, movement, sprites, hitboxes
