@@ -1,6 +1,3 @@
-# screaming-base
-Lightweight 2D NextBot framework for Garry's Mod
-
 # $creaming Base: 2D Nextbot Framework
 
 A lightweight, no-nonsense framework for creating 2D NextBots in Garry's Mod.  
