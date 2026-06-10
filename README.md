@@ -87,6 +87,12 @@ Create `settings/npc_[your bot name].json`:
 When `true` — sliders in Q-menu are disabled (grayed out).  
 Players cannot change settings in-game.
 
+### Demonstration
+
+You can see every feature of the framework in action and modify it in the [demo addon](https://github.com/Insincere-Habibi/screaming-base-demo).
+
+[![Demo Addon](https://img.shields.io/badge/Demo-Boykisser_Nextbot-pink?style=for-the-badge)](https://github.com/Insincere-Habibi/screaming-base-demo)
+
 ## All shared.lua Fields
 
 | Field | Type | Default | Description |
