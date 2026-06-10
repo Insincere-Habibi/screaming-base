@@ -160,6 +160,7 @@ end)
 
 ## Spawnmenu Structure
 
+```
 $creaming Base
 ├── 📁 My Addon
 │ ├── 📁 SubType
@@ -168,7 +169,7 @@ $creaming Base
 ├── 📁 NonFolder
 └── 📁 Tools
 └── 🔧 Debugger
-
+```
 
 ---
 
