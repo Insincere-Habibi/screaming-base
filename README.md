@@ -200,6 +200,12 @@ Created by **$creaming Eagle**
 
 ---
 
+## License
+
+This project is licensed under CC BY-NC-SA 4.0. See the [LICENSE](LICENSE) file for the full text.
+
+---
+
 BOYKISSER JUMPSCARE
 
 ```
