@@ -1,5 +1,7 @@
 # $creaming Base: 2D Nextbot Framework
 
+![Framework icon](icon.jpg)
+
 A lightweight, no-nonsense framework for creating 2D NextBots in Garry's Mod.  
 Fill out one shared.lua — and your NextBot is alive.  
 No complex setup, no spaghetti code.
