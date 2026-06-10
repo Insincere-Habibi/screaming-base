@@ -146,7 +146,7 @@ When held:
 
 ## Hooks for Developers
 
-``lua
+```lua
 hook.Add("ScreamingBase_OnNextbotPreCreate", "MyAddon", function(class, data)
     -- Modify data before registration
 end)
@@ -154,7 +154,7 @@ end)
 hook.Add("ScreamingBase_OnNextbotPostCreate", "MyAddon", function(class, data)
     -- Do something after registration
 end)
-``
+```
 
 ---
 
