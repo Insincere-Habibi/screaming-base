@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "screaming_base/default_square"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$ignorez" 0
+}
