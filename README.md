@@ -23,34 +23,34 @@ Now released for everyone.
 Subscribe on Steam Workshop or copy `$creaming_base` into `garrysmod/addons/`
 
 ### 2. Create your NextBot
-Create folder `lua/entities/npc_mybot/` with `shared.lua`:
+Create folder `lua/entities/[your bot name]/` with `shared.lua`:
 
 ```lua
 ENT.Base = "base_screaming"
 ENT.Type = "nextbot"
-ENT.PrintName = "My Bot"
+ENT.PrintName = "[your bot name]"
 ENT.Category = "$creaming Base"
 ENT.Spawnable = true
-ENT.Folder = "entities/npc_mybot"
+ENT.Folder = "entities/[your bot name]"
 
-ENT.AddonName = "My Addon"
-ENT.SpriteMaterial = "mybot/sprite"
+ENT.AddonName = "[your addon name]"
+ENT.SpriteMaterial = "[your bot name]/sprite"
 ENT.SpriteSize = 90
 
 ScreamingBase.RegisterNextbot(ENT)
 ```
 
 ### 3. Add a sprite
-Put your `.vtf` file in `materials/mybot/sprite.vtf`
+Put your `.vtf` file in `materials/[your bot name]/sprite.vtf`
 
 ### 4. Done
-Your NextBot is ready. Spawn it from `Q-menu → $creaming Base → My Addon`
+Your NextBot is ready. Spawn it from `Q-menu → $creaming Base → [your addon]`
 
 ## Configuration
 
 ### settings.json
 
-Create `settings/npc_mybot.json`:
+Create `settings/npc_[your bot name].json`:
 
 ```json
 {
@@ -144,18 +144,18 @@ When held:
 ## Hooks for Developers
 
 ```lua
-hook.Add("ScreamingBase_OnNextbotPreCreate", "MyAddon", function(class, data)
+hook.Add("ScreamingBase_OnNextbotPreCreate", "[your addon name]", function(class, data)
     -- Modify data before registration
 end)
 
-hook.Add("ScreamingBase_OnNextbotPostCreate", "MyAddon", function(class, data)
+hook.Add("ScreamingBase_OnNextbotPostCreate", "[your addon name]", function(class, data)
     -- Do something after registration
 end)
 ```
 
 ---
 
-## Spawnmenu Structure
+## Spawnmenu Structure (example)
 
 ```
 $creaming Base
