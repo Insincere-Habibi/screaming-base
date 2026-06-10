@@ -188,6 +188,7 @@ I'm planning to add a spawnpoint system with respawn timers, patrol AI with agro
 
 Created by **$creaming Eagle**
 
+---
 
 BOYKISSER SCREAMER
 
