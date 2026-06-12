@@ -80,23 +80,34 @@ function ENT:OnTakeDamage(dmginfo)
 
     local current_hp = self:Health() - dmginfo:GetDamage()
     self:SetHealth(current_hp)
-
-    -- Clean death: stop everything before removing
+    
     if current_hp <= 0 and not self.m_bRemoving then
         self.m_bRemoving = true
+
         if self.loco then
             self.loco:SetDesiredSpeed(0)
             self.loco:SetAcceleration(0)
             self.loco:SetDeceleration(0)
         end
-        self:SetSolid(SOLID_NONE)
+
+        self.BehaveThread = nil
+        self.Behavior = nil
+
+        self:NextThink(CurTime() + 999999)
         self:SetNoDraw(true)
-        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-        if self.Behavior then self.Behavior = nil end
-        self:SetThink(nil)
-        self:SetNextThink(nil)
-        if self.MusicLoop then self.MusicLoop:Stop() self.MusicLoop = nil end
-        SafeRemoveEntity(self)
+        self:SetSolid(SOLID_NONE)
+        self:SetMoveType(MOVETYPE_NONE)
+
+        if self.MusicLoop then
+            self.MusicLoop:Stop()
+            self.MusicLoop = nil
+        end
+
+        timer.Simple(0.05, function()
+            if IsValid(self) then
+                SafeRemoveEntity(self)
+            end
+        end)
     end
 end
 
